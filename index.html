@@ -447,7 +447,7 @@ const pl=$('.pill'),bm=$('#bm');function cm(){pl.classList.remove('open');bm.set
 bm.onclick=()=>{const o=pl.classList.toggle('open');bm.setAttribute('aria-expanded',o)};$$('#nv a').forEach(a=>a.addEventListener('click',cm));addEventListener('keydown',e=>{if(e.key=='Escape')cm()});
 $('#yr').textContent=new Date().getFullYear();
 // contact form. SETUP: create a form at formspree.io and replace YOUR_FORMSPREE_FORM_ID below with its ID.
-const FORM_ENDPOINT='https://formspree.io/f/YOUR_FORMSPREE_FORM_ID',MAIL_TO='mqalhussain@gmail.com';
+const FORM_ENDPOINT='https://formspree.io/f/xzeeeqrn',MAIL_TO='mqalhussain@gmail.com';
 const cf=$('#cf'),fs=$('#fs'),sd=$('#sd');let busy=false;
 const VR={n:v=>v.length<2?'Please enter your full name (at least 2 characters).':v.length>100?'The name is too long (100 characters maximum).':'',
 e:v=>!v?'Please enter your email address.':v.length>254?'The email address is too long.':!/^[^\s@]+@[^\s@.]+(\.[^\s@.]+)*\.[A-Za-z]{2,}$/.test(v)?'Please enter a valid email address, such as name@example.com.':'',
