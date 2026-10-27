@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://malhosein.github.io/sitemap.xml
